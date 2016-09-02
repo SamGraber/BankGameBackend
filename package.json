@@ -4,8 +4,9 @@
   "description": "Backend API and data layer for BankGame",
   "scripts": {
 	"postinstall": "typings install",
-    "start": "npm-run-all --parallel serve lint",
+    "start": "npm-run-all --parallel database serve lint",
     "serve": "ts-node server.ts",
+    "database": "mongod --dbpath ./data",
     "lint": "tslint server.ts source/**/*.ts",
     "lint:watch": "watch \"npm run lint\" ./source",
     "test": "mocha"
