@@ -1,0 +1,11 @@
+# npm
+/node_modules/
+
+# built files
+*.js
+
+# typings files
+/typings/
+
+# mongodb data
+/data/
