@@ -1,6 +1,7 @@
 import { Application } from 'express'
 import { IConfig } from '../../config'
 import { User } from './model'
+import { Account } from '../account/model'
 
 export class UserResource {
 	app: Application

@@ -1,7 +1,9 @@
 import { model, Schema } from 'mongoose'
 
 export interface IUser {
-	name: string,
+	username: string
+	password: string
+	accountId: string
 }
 
 export const UserSchema = new Schema({

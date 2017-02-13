@@ -2,6 +2,7 @@ import * as express from 'express'
 import { IConfig } from './config'
 import Database from './db'
 import { UserResource } from './resources/user'
+import { AccountResource } from './resources/account'
 
 // tslint:disable:no-console
 
@@ -31,6 +32,8 @@ class App {
 	routes() {
 		const user = new UserResource(this.app, this.config)
 		user.register('/user')
+		const account = new AccountResource(this.app, this.config)
+		account.register('/account')
 	}
 }
 
